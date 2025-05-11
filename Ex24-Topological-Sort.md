@@ -10,11 +10,15 @@ To compose the code to determine whether the topological ordering for the follow
 ```
 1. Start
 2. Create the graph using create_graph() function.
-3. Calculate the indegree for each vertex. If the indegree is 0, insert the vertex into the queue.
+3. Calculate the indegree for each vertex. If the indegree is 0, insert
+   the vertex into the queue.
 4. Initialize count to 0 and begin processing vertices from the queue.
-5. Dequeue a vertex, add it to the topo_order array, and remove all its outgoing edges.
-6. For each adjacent vertex, decrease its indegree. If the indegree becomes 0, enqueue it.
-7. If there is a cycle (i.e., not all vertices are processed), print an error message and exit.
+5. Dequeue a vertex, add it to the topo_order array, and remove all its
+   outgoing edges.
+6. For each adjacent vertex, decrease its indegree. If the indegree
+   becomes 0, enqueue it.
+7. If there is a cycle (i.e., not all vertices are processed),
+   print an error message and exit.
 8. Print the vertices in topological order.
 9. End
 ```  
